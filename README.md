@@ -30,3 +30,12 @@ Jonathan Levine, for creating public posts about analyzing the iOS kernel
 Luca Todesco, for building the Yalu102 jailbreak
 [Hostinger](http://hotsinger.com), For the great hosting service where we store our API's.
 Apple Inc, for allowing so much from within the sandbox.
+
+
+## Buying the app
+Buying the app makes you a supporter of the project and brings me one step further to opensourcing the entire app.
+At todays date we have sold 7 copies of the app, which made earn $35 gross.
+This money has been spent on paying for the hosting for the API's.
+When I have earned $150 in total I will be ready to opensource the application.
+So please support us with any amount above $5 and you'll get the app.
+Please contact me at [Twitter](https://twitter.com/MTJailed) for any requests to buy the app or to ask any questions
