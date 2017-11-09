@@ -25,9 +25,10 @@ When you use code from this repository you also need to opensource your project 
 - Respring bug, by Sem Voigtlander, Vincent Desmurs and Joseph Shenton
 
 ## Special thanks to
-Joseph Shenton, for teaching me how to create a better UI.
-Jonathan Levine, for creating public posts about analyzing the iOS kernel
-Luca Todesco, for building the Yalu102 jailbreak
+- Joseph Shenton, for teaching me about table views.
+- Jonathan Levine, for creating public posts about analyzing the iOS kernel
+- Ian Beer, Luca Todesco and siguza for their public kernel and sandbox exploits.
+
 [Hostinger](http://hotsinger.com), For the great hosting service where we store our API's.
 Apple Inc, for allowing so much from within the sandbox.
 
