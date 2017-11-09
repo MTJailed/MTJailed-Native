@@ -1,0 +1,24 @@
+NAME: ktool
+
+DESCRIPTION:
+ktool, or better called ktool64 as there is no support for 32-bit currently is a tool for analysing the currently installed iOS kernel.
+The kernel is a MACH-O binary and is stored in a cache file on the OS.
+This cache file is compressed using a compression algorihtm created by apple, lzss.
+You can read more about lzss on the iphone wiki or by looking up it's manual page here (man lzss).
+A MACH-O binary contains a header on top that stores information on where the segments and data structures of the binary are located.
+For example a MACH-O binary's header contains the binary's entrypoint and segment offsets.
+The kernel offsets as known to be used in kernel patches for jailbreaks are therefore not hard to get from a decompresssed unencrypted kernel.
+It basically requires a program to look up the kernel's entry point, symbol table and do a small bit of disassembly.
+For finding the allproc offset, PGRP_ADD is disassembled using specific hexadecimal MASKS that represent assembly OPCODES. (Assembly OPCODES represent instructions that are executed by the processor while running a binary).
+For the rest of the symbols, offsets are found using the symbol table in the MACH-O header.
+They can also be found if you know the exact name of a symbol by running the ksym command.
+example: ksym symbol_name_here
+If a kernel symbol can not be found then the offset will be 0xfffffff, if you get this result ignore it as it is NOT a correct kernel offset. It may mean that you are running ktool on a 32-bit device with an encrypted kernel, or the decompressed kernel cache is corrupt.
+
+To be a bit more clear:
+ktool is a tool for iOS kernel researchers that can be used to decompress and analyse the kernel of the current device, returning the kernel release, kernel page size and it's symbol offsets.
+ktool also saves on-device shsh blobs automatically so they could possibly be used for firmware downgrades in the future.
+
+The decompressed kernel is stored in MTjFS in the var/mobile/Documents directory.
+Modifying the decompressed kernel might result in a denial of service while running the ktool command.
+

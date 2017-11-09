@@ -1,0 +1,8 @@
+NAME: mttelnet
+
+DESCRIPTION:
+MTTelnet is an alternative to the convenience of openSSH or dropbear on a jailbroken device.
+It allows users to execute commands remotely given the ip and port of the MTTelnet server.
+MTTelnet is based on an opensource project called GCDTelnetServer.
+MTTelnet's biggest difference in comparison to SSH is that SSH provides authentication, encryption and port-forwarding functionality.
+MTTelnet currently does not require authentication.

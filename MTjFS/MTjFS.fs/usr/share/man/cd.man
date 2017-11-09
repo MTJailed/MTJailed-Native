@@ -1,0 +1,7 @@
+NAME: cd
+
+DESCRIPTION:
+cd is a UNIX command used to change the working directory.
+MTJailed supports this command but since MTJailed makes use of MTjFS things can be a bit odd.
+Executing cd / will take you to iOS's root filesystem.
+If you want to go back to MTjFS you will need to execute cd $home.

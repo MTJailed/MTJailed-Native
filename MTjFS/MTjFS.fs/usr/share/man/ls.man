@@ -1,0 +1,8 @@
+NAME: ls
+
+DESCRIPTION:
+ls is a command used to list files on the filesystem.
+ls / will for example list all files and directories that are readable and located in iOS rootfs.
+ls without an argument specified will return the files and directories located in the current directory.
+Note that not all directories on the iOS filesystem are accessible and viewable due to sandbox restrictions.
+

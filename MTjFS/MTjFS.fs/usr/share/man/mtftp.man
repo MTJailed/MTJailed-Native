@@ -1,0 +1,8 @@
+NAME: mtftp
+
+DESCRIPTION:
+mtftp is an implementation of the FTP protocol and server for iOS.
+FTP is a protocol for transferring files from one device to another.
+In MTJailed this function can be used to transfer MTjFS or for uploading and downloading files from and to the device.
+mtftp uses pureftpd for the server.
+More info can be found at the source repository of pureftp on github.

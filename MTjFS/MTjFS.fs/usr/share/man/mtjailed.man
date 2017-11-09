@@ -1,0 +1,14 @@
+NAME: MTJailed Native
+
+DESCRIPTION:
+MTJailed Native is a terminal emulator for iOS 9.3 - 10.3.3
+The terminal runs inside the sandbox, this way non-jailbroken iPhones can run the app too.
+The app was developed for 64-bit, but should be able to run fine on 32-bit devices as well.
+Some commands are not (fully) supported on 32-bit iPhones.
+To get started with MTJailed type the 'help' command.
+
+Updates for MTJailed are made weekly and you can check what the latest version is using:
+wget http://jailed.ml/api/update.php
+
+To show your current version run the following command:
+version

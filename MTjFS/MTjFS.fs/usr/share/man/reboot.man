@@ -1,0 +1,19 @@
+NAME: reboot
+
+DESCRIPTION:
+The reboot command can be used to kill the entire operating system including the kernel causing it to reboot.
+This can be useful if you for example have just installed new packages or want your device to reinitialise.
+A reboot is often recommended after jailbreaking your device for the very first time.
+This is to ensure that the jailbreak has succeeded correctly.
+Depending on what jailbreak you used it might be required to rejailbreak your device after the reboot again.
+A reboot also frees memory so if the device turned slow after playing a lot of games then a reboot might come in handy.
+The reboot MTJailed uses requires less memory then a normal reboot done via the user interface.
+This is because the command makes use of an undisclosed vulnerability in the iOS kernel, working on all iOS versions as of 9.3 including iOS 11.2.
+Apple has been notified about this vulnerability but has not provided a patch for it ever since and the time for releasing one has expired. That is why this vulnerability is now legal to be used in any software.
+The source code of the exploit will be kept secret for a small while.
+The bug makes use of a design fault in the allocation of address space and therefor might not be fixed easily.
+It can not harm your device in any way but it may give unexpected ui glitches before the reboot happens.
+A kernelpanic will be trown as result of the bug and therefore the device will kill the current kernel and initiate a new instance of the kernel.
+This makes the reboot consume less battery than an ordinary boot as it does not power off the hardware or have to go through the bootloader stage again.
+You can view the bugreport in the settings of your device in the settings app under Privacy>Diagnostics>Panic-SOME-DATE-HERE
+Use of this bug is allowed to anyone who reverse engineers it, but requires to give credit to it's finder and creator of the exploit: Sem Voigtlander

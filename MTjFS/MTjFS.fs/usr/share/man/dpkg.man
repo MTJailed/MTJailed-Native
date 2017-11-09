@@ -1,0 +1,18 @@
+NAME: dpkg
+
+DESCRIPTION:
+DPKG is the debian package manager.
+It is used for installing, updating and removing debian packages.
+A debian package is an ar archive.
+It contains commands to be executed during stages of installation.
+These are compressed into a tar achive named control.tar
+A second archive exists named data.tar containing folders with contents that need to be moved into the installation directories.
+using dpkg you can also list the installed software of the operating system.
+Due to iOS restrictions system packages can not be removed by dpkg.
+
+Example usage:
+dpkg -i example.deb (to install a package)
+dpkg -la (to list all installed packages)
+dpkg -ls (to list only system packages)
+
+

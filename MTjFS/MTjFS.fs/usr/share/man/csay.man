@@ -1,0 +1,13 @@
+NAME: csay
+
+DESCRIPTION:
+csay is a text to speech synthesizer.
+It is written entirely on Apple's public speech API and can be used for speaking text or files.
+
+Usage:
+	For files: csay -f [filename]
+	For text: csay -f word1 word2 word3 etc...
+
+Tip!
+Csay can speak manual pages as well for example speak out this manual page:
+csay -f /usr/share/man/csay.man

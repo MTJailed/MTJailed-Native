@@ -1,0 +1,19 @@
+NAME: nonce
+
+DESCRIPTION:
+========== Downgrading using a nonce ============
+
+ # When your iPhone is jailbroken
+	You can downgrade if you saved shsh2 blobs for the version you want to downgrade to.
+	To be able to downgrade you need to set a nonce.
+	Setting a nonce is as easy as executing the setnonce command, followed by the nonce.
+
+ # When your iPhone is not Jailbroken
+	Keep saving as many shsh2 blobs for your iPhones
+	When an exploit is released that gains kernel priviliges you can downgrade
+	Even when KPP is not bypassed yet.
+ 
+ # How to save on-device blobs if signing already stopped
+	Use ktool to save the blobs that are on your device.
+	The blob is for the version that your device is currently on.
+

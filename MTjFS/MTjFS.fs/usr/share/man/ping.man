@@ -1,0 +1,9 @@
+NAME: ping
+
+DESCRIPTION:
+ping can be used to check if a server is up or not.
+ping also returns the time it took for the server to respond.
+this is a very useful tool for server administrators to test if their servers are functioning properly or undergoing an attack.
+Script kiddies (kids who unknowingly use software to attack networks) use the ping command to send a huge amount of packages to a server with as goal to overload the server with data so it stops responding.
+ping in mtjailed has left out functionality for sending large packages or an x amount of packages in order to prevent abuse of the command.
+

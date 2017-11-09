@@ -1,0 +1,4 @@
+NAME: version
+
+DESCRIPTION:
+Command to view your current MTJailed version

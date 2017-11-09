@@ -1,0 +1,13 @@
+NAME: lzss
+
+DESCRIPTION:
+Lzss is a compression algorithm mainly used by Apple.
+In iOS the lzss algorithm is used for the kernelcache.
+Compression in general is used to make files smaller.
+A requirement is that to read the file the file should be decompressed again.
+
+Usage:
+	To compress files: lzss -c -i inputfile -o outputfile
+	To decompress files: lzss -d -i inputfile -o outputfile --offset [compression offset]
+
+

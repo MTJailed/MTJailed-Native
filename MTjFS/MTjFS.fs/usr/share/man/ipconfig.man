@@ -1,0 +1,8 @@
+NAME: ipconfig
+
+DESCRIPTION:
+ipconfig is a command used for showing you the configuration of your network interface.
+since iOS sandbox restrictions and kernel restrictions do not permit applications to read the mac address of the iOS device, I can not integrate this functionality in the command.
+ipconfig in mtjailed can show you your network interface name, local ip, subnet mask and network interface status.
+An attempt to get the mac address is added for older 'legacy (iOS 9)' devices.
+

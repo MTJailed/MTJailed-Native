@@ -1,0 +1,6 @@
+NAME: free
+
+DESCRIPTION:
+Command to see the available memory on the system.
+If you are looking for a way to free memory you should run crunch.
+Crunch might not measurably increase memory but you would be able to feel a slight diference in the loading of UIElements in applications and the allocation of new processes.

@@ -1,0 +1,11 @@
+NAME: security
+
+DESCRIPTION:
+iOS is known to be one of the best secured mobile environments in the world..
+On kernel level, iOS was the first mobile operating system to implement kernel address space randomisation making it harder for attackers to patch the kernel.
+Since iOS 9 Kernel Patch Protection randomly checks kernel memory pages to find anomalies indicating kernel patches done by attackers.
+Bugs found in the kernel have become very hard to exploit due to these techniques but in the past workarounds were found.
+On application level iOS provides Data Protection which can be enabled and implemented for each individual application by it's developers.
+MTJailed has chosen not to enable Data Protection as that would take away the convenience of reading files in MTjFS via MTTelnet while the device is locked.
+This means that files are unencrypted and can be read by anyone who has access to them.
+It is the responsibility of the user to encrypt files and to avoid storing privacy sensitive data in MTjFS.

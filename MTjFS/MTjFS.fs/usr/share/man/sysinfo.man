@@ -1,0 +1,6 @@
+NAME: sysinfo
+
+DESCRIPTION:
+sysinfo is meant to provide basic information about the currently installed system.
+It will show you the time, os version and build type.
+This information can be used to for example identify a specific build.

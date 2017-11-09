@@ -1,0 +1,17 @@
+NAME: apt
+
+DESCRIPTION:
+apt is a command for managing software packages.
+Like you may know from cydia, or from linux APT makes use of software repositories.
+These repositories contain software and updates.
+In MTJailed apt can be used to install signed ipa (iphone applications) or commands
+Using apt-get upgrade you can check for updates.
+
+apt features the following commands:
+
+apt-get update (used for downloading new packages)
+apt-get install (used for installing a new package)
+apt-get upgrade (used for updating installed packages)
+apt-get dist-upgrade (used for updating the operating system)
+
+You can specify APT repositories in /etc/apt/sources.list

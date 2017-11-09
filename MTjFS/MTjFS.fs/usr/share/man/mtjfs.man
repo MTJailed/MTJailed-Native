@@ -1,0 +1,12 @@
+NAME: MTJFS
+
+DESCRIPTION:
+MTJFS is a folder serving as a filesystem to replicate the structure of the iOS filesystem.
+It is invented to manage settings and files in a logic UNIX-based way and provides a writable location for standard filesystem operations such as copying or creating files.
+MTJFS is a requirement as for example the manual page you are currently reading is stored on it.
+Since all filles directories on MTJFS are readable and writable you can even write your own manual pages.
+Manual pages should come in the format like this file has and should end with a .man extension.
+Manual pages are stored in /usr/share/man
+MTJFS is currently only downloadable from https://jailed.ml/api/MTjFS.fs.zip
+And users are required to transfer it to MTJailed using iTunes.
+Once MTJailed receives the Filesystem it will activate and show the commandline interface.

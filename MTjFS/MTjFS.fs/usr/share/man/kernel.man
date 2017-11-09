@@ -1,0 +1,13 @@
+NAME: kernel
+
+DESCRIPTION:
+A kernel is the core of an operating system.
+It is launched after the boot sequence and it monitors, instantiates and manages all running processes on the device including the security, hardware and address space allocation.
+On iOS the kernel is build up from three parts:
+Darwin (From BSD), Mach (a micro kernel) and IOKit (Drivers and kernel extensions / hardware)
+If you are looking for interprocesscommunication or address space management from within an normal application you should probably use the API built on top of MACH.
+MACH is a lowlatency kernel meaning it is very fast and therefore can very good be used for information transfer or address space management.
+Darwin, the BSD part of the XNU (iOS) kernel can for example be used to intercept signals or send syscalls to the kernel, however iOS prohibits many syscalls and SIGABRT signals can not be handled.
+IOKit since iOS 10 mostly requires you to be out of the sandbox and therefore calls to it's API can not be made from within normal user application. IOKit is extremely useful if it comes to communicating with hardware directly, such as the Display, Audio, Camera, USB or Network interfaces.
+However, in iOS 9 connections to IOKit can be made and for example the serial number of iOS device can be read with it without the need of any entitlements.
+IOkit uses parts of the MACH API for communication and eventhough Apple has listed it is a public API the documentation is sparse.

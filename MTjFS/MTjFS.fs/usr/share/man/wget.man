@@ -1,0 +1,14 @@
+NAME: wget
+
+DESCRIPTION:
+wget, or better defined as webget can download any file from a http or https domain on the internet.
+You can use it for example to download music, images, videos or documents. Or to inspect the source code of a webpage.
+wget is coded entirely in Objective-C to be sure that no remote site can influence the memory of MTJailed, as Obj-C uses automanaged memory.
+wget can return the raw response of the webrequest, or you can specify the -o (output) parameter with a file to save the data to.
+
+Example usage:
+wget http://jailed.ml/access/ -o jailed.html (save the HTML source code of the customer panel of MTJailed to the file jailed.html on MTjFS)
+
+or:
+
+wget http://jailed.ml (display the source code of MTJailed's website)

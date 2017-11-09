@@ -1,0 +1,26 @@
+NAME: jailbreak
+
+DESCRIPTION:
+A jailbreak is a piece of software that overwrites or bypasses sandbox restrictions.
+Jailbreaking has become very popular among the iOS user community but in theory any sandboxed software can be written a jailbreak for.
+A jailbreak touches or bypasses a various amount of restrictions and hereby makes use of vulnerabilities in the software.
+This means that a jailbreak will make your operating system more vulnerable if security policies are disabled.
+Since the release of iOS 9, many jailbreaks rely on vulnerabilities in the kernel, the core of the system.
+Kernel vulnerabillities are of huge impact of the security of the operating system, when found a user's privacy is at risk.
+The maintainer of the software will release an update that patches these vulnerabilities and for security reasons it is recommended to update as a user.
+However a jailbreak allows users to freely modify and manipulate system behaviour and therefore can extend functionality of the Operating System.
+Users in the iOS community are known to like jailbreaks because they can personalise the look of there devices.
+A jailbreak on iOS also gives developers the chance to make their iPhone a primary development environment.
+Jailbreaking has become legal since 2012, but by jailbreaking iOS you take distance from the right to have warranty on your device.
+MTJailed does not recommend jailbreaking due to security and privacy concerns, but still gives users the freedom to do.
+In MTJailed there is currently only one jailbreak implimented that can be initated as by running
+
+	jailbreak
+
+the jailbreak has been written by Luca Todesco and inherrits some code of Stefan Esser.
+The following devices and system versions can be jailbroken using it:
+
+	- iOS 10-10.1.1 (All 64-bit devices)
+	- iOS 10.2 (All 64-bit devices except iPhone 7)
+
+Jailbreaking using the jailbreak command will install Cydia (Graphical Interface for APT) and dropbear (SSH Server).

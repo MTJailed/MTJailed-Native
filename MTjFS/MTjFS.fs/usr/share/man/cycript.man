@@ -1,0 +1,12 @@
+NAME: Cycript
+
+DESCRIPTION:
+Cycript is a debugging and reverse engineering tool created by Jay Freeman (saurik).
+It features an interpreter based on JavascriptCOre and can adopt the syntax of other programming languages.
+Cycript can modify and inject code into a running process.
+
+In MTJailed Cycript has been implimented to be able to modify the runtime remotely.
+Users can inject code to test for certain functionality.
+MTJailed license allows user to release tweaks in the form of dynamic libraries for it.
+This way developers can extend the functionality or design of the app.
+Cycript therefore can be used very well to develop these tweaks live.

@@ -1,0 +1,9 @@
+import os
+import sys
+import platform
+
+print "This is an example of a developer command"
+print "Platform info: "
+print platform.version()
+print " "
+print "Have a nice day!"

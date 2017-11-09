@@ -1,0 +1,15 @@
+NAME: sandbox
+
+DESCRIPTION:
+The sandbox is a software environment with restrictions and policies for all processes running inside it.
+On iOS the sandbox prohibits for example to execution of code, write access to files outside of the app container
+and read access to files outside of the Sandbox.
+MTJailed does not actively bypass the sandbox but makes use of the fact that the sandbox does not prohibit as much as many users think.
+Many directories on the filesystem are readable eventhough Apple's documentation claims different.
+This is because in these directories there are files that serve as resources, such as configuration information, libraries and frameworks, images or UI assets.
+MTJailed has a weak form of support for running iOS binaries.
+This is because an application should be able to load binary frameworks and libraries,
+by using the dynamic library loader to load a binary as if it is a framework and reverse engineering the header of the binary to find and call it's main entrypoint.
+MTJailed makes use of a technique called interposing to forward logic that is not allowed inside the sandbox from the loaded binary to a fake method.
+Using exception traps and signal handlers MTJailed tries to prevent crashes caused by a loaded and executed binary.
+To conclude MTJailed itself does not patch or bypass any sandbox restrictions making the system function with normal security.
