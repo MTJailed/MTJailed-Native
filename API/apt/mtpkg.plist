@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>packages</key>
+    <array>
+      <dict>
+         <key>name</key>
+         <string>$PACKAGE_NAME</string>
+         <key>description</key>
+         <string>$PACKAGE_DESCRIPTION</string>
+         <key>contents</key>
+          <array>
+           <dict>
+             <key>bundleid</key>
+             <string>ml.jailed.$BUNDLE_ID</string>
+             <key>developer</key>
+             <string>$DEVELOPERID</string>
+             <key>build</key>
+             <string>$SOFTWAREBUILD</string>
+             <key>version</key>
+             <string>$SOFTWAREVERSION</string>
+             <key>url</key>
+             <string>$DEVELOPERURL</string>
+           </dict>
+         </array>
+      </dict>
+    </array>
+  </dict>
+</plist>
